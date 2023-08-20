@@ -1,38 +1,39 @@
-# create-svelte
+# install counter
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+A simple firebase + svelte project to count udroid installations.
 
-## Creating a project
+## Working
 
-If you're seeing this, you've probably already done this step. Congrats!
+- Svelte is used to create simple server side functions to increment the counter and return the current count.
+- vercel is used to deploy the serverless functions ( :heart: vercel )
+- Firebase to store the count and serve
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Endpoints
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+|Endpoint| Description |
+|--|--|
+| `/count` | to increment the count and return the current count |
+| `/cur_count` | to return the current count |
 
-## Developing
+> No extra parameters are required for the endpoints
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Usage
 
-```bash
-npm run dev
+check out `.env.example` to create a `.env` file
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
 
 ```bash
-npm run build
+curl https://endpoints-url/count
 ```
 
-You can preview the production build with `npm run preview`.
+returns a json response
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+```cmd
+{"downloads":908}
+```
+
+> Please don't spam the endpoints :pray:
+
+## License
+
+MIT
