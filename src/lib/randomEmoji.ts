@@ -824,7 +824,7 @@ var emojis = [
 
 let waitTime = 80;
 let emojiWait = 0;
-let prevEmoji = '';
+let prevEmoji = emojis[Math.floor(Math.random() * emojis.length)];
 function returnRandomEmoji() {
 	if (emojiWait >= waitTime) {
 		emojiWait = 0;
