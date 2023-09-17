@@ -13,7 +13,6 @@
 	function counter(intervel, max, step) {
 		let interval = setInterval(() => {
 			count = count + step > max ? max : count + step;
-			console.log(count + ' ' + interval);
 			finalText = count.toString() + ' ' + returnRandomEmoji();
 			if (count >= max) {
 				clearInterval(interval);
@@ -27,14 +26,16 @@
 </script>
 
 <div class="dark:bg-[#070704] bg-[#EDEDDE]">
-	<div class="flex flex-col h-screen items-center justify-center">
-		<a
+	<div class="flex flex-col h-screen items-center justify-center bg-[#07070d] rounded-sm">
+		<div class="bg-[#4e6638] p-6 rounded-xl">
+            <a
 			href="https://github.com/RandomCoderOrg/ubuntu-on-android"
 			target="_blank"
 			referrerpolicy="no-referrer"
-			class="text-[#070704] dark:text-[#ededde] text-6xl hover:underline dark:decoration-[#705091] text-bold font-mono"
+			class="text-[#070704] dark:text-[#ededde] text-4xl hover:underline dark:decoration-[#EDEDDE] text-bold font-mono"
 			>UDROID Downloads</a
 		>
-		<p class="font-light font-mono text-3xl text-[#070704] dark:text-[#ededde]">{finalText}</p>
+		<p class="font-light text-center font-mono text-3xl text-[#070704] dark:text-[#ededde]">{finalText}</p>
+        </div>
 	</div>
 </div>
