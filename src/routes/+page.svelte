@@ -26,7 +26,7 @@
 </script>
 
 <div class="dark:bg-[#070704] bg-[#EDEDDE]">
-	<div class="flex flex-col h-screen items-center justify-center bg-[#07070d] rounded-sm">
+	<div class="flex flex-col h-screen items-center justify-center rounded-sm">
 		<div class="bg-[#4e6638] p-6 rounded-xl">
             <a
 			href="https://github.com/RandomCoderOrg/ubuntu-on-android"
